@@ -1,4 +1,4 @@
-var containsDuplicates = function(nums){
+var containsDuplicate = function(nums){
     seen = new Set
     for(let num of nums){
         if (seen.has(num)) return true
@@ -9,4 +9,4 @@ var containsDuplicates = function(nums){
 
 
 
-console.log(containsDuplicates([1,2,3,4]));
+module.exports = containsDuplicate;
