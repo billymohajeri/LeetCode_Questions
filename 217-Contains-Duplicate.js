@@ -17,7 +17,6 @@ var containsDuplicate = function (nums) {
     } else return true;
   }
   return false;
-  //   console.log(myHash);
 };
 
 console.log(containsDuplicate([1, 2, 3, 8]));
