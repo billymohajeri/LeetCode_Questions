@@ -20,5 +20,4 @@ var containsDuplicate = function (nums) {
   return false;
 };
 
-// console.log(containsDuplicate([1, 2, 3, 8]));
 module.exports = containsDuplicate;
