@@ -9,15 +9,16 @@
 //   return false;
 // };
 
+// Hash Table
 var containsDuplicate = function (nums) {
-  myHash = {};
-  for (num of nums) {
-    if (myHash[num] === undefined) {
-      myHash[num] = 1;
-    } else return true;
+  const myHash = {};
+  for (const num of nums) {
+    if (myHash[num]) {
+      return true;
+    } else myHash[num] = 1;
   }
   return false;
 };
 
-console.log(containsDuplicate([1, 2, 3, 8]));
+// console.log(containsDuplicate([1, 2, 3, 8]));
 module.exports = containsDuplicate;
